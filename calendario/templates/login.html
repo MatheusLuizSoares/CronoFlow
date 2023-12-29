@@ -8,14 +8,15 @@
 <body>
     <div>
         <h2>Login</h2>
-        <form action="{% url 'login' % }" method=POST>{%csrf_token%}
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
             <label for="email">Email:</label>
-            
+            <input type="email" id="email" name="username" required>
+            <br>
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password" required>
             <br>
-            <input type=submit value="Acessar">
-
+            <input type="submit" value="Acessar">
         </form>
     </div>
 </body>
