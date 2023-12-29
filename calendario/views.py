@@ -10,10 +10,15 @@ def agenda(request):
 
 
 def registro(request):
-    # Adicione a lógica para a página de registro aqui
-    return render(request, "registro.html")
-
+ if request.method=="GET":
+  return render(request, "registro.html")
+ else:
+     nome=request.POST.get("name")   
+     email=request.POST.get("email")  
+     senha=request.POST.get("senha")
+     return HttpResponse
 # Se precisar, você também pode adicionar a função de login aqui
 def login(request):
-    # Adicione a lógica de login aqui
+
     return render(request, "login.html")
+
