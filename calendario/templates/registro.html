@@ -8,12 +8,12 @@
 <body>
     <div>
         <h2>Registro</h2>
-        <form action="{% url 'cadastro'%}" method="POST">{% csrf_token %}
-            <label for="name">Username:</label>
+        <form action="{% url 'registro'%}" method="POST">{% csrf_token %}
+
+            <label for="name">nome:</label>
             <input type="text" id="name" name="name" required>
             <br>
-         
-            <input type="text id="Idade name="idade required">
+      
             <label for="email">E-mail:</label>
             <input type="Email" id="Email" name="Email" required>
             <br>
