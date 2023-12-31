@@ -1,0 +1,129 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Main styling */
+.conteudo {
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -250px; /* Metade da largura para centralizar */
+  width: 500px;
+}
+
+.calendario {
+  text-align: center;
+}
+
+.calendario header {
+  position: relative;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.btn-ant,
+.btn-pro {
+  position: absolute;
+  top: 50%;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  margin-top: -16px;
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-ant {
+  left: 80px;
+}
+
+.btn-pro {
+  right: 80px;
+}
+
+.btn-ant:hover,
+.btn-pro:hover {
+  background: #cbd1d2;
+  color: #f9f9f9;
+}
+
+.calendario table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.calendario thead {
+  background: #4285f4;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.calendario td {
+  border: 1px solid #cbd1d2;
+  height: 50px;
+  text-align: center;
+  width: 14.28%;
+}
+
+.calendario tbody td {
+  cursor: pointer;
+}
+
+.calendario tbody td:hover {
+  background: #f2f2f2;
+}
+
+.calendario table .dia-atual {
+  background: #4285f4;
+  color: #fff;
+}
+
+.calendario .mes-anterior,
+.calendario .proximo-mes {
+  color: #4285f4;
+}
+
+.calendario .mes-anterior:hover,
+.calendario .proximo-mes:hover {
+  background: #e0e0e0;
+}
+
+.event {
+  position: relative;
+}
+
+.event:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  left: 50%;
+  bottom: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  background: #4285f4;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.event:hover::after {
+  background: #fff;
+}
+
+.event.dia-atual::after {
+  background: #fff;
+}

@@ -45,6 +45,6 @@ def login(request):
          return HttpResponse("Email ou senha invalidos")
      
 @login_required(login_url="/calendario/login/")
-def plataforma(resquest):
+def plataforma(request):
     return HttpResponse("prataforma")
 

@@ -1,100 +1,99 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{%static 'calendario/css/agenda.css' %}">
-  <link rel="stylesheet" href="{%static 'calendario/css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'calendario/css/agenda_css.css' %}">
+ 
   <title>Agenda</title>
-
 </head>
 <body>
 
-  <div class="conteudo"></div>
-  <div class="Calendario"></div>
+  <div class="conteudo">
+    <div class="calendario">
+      <header>
+        <h2 id="mes">Abril</h2>
+        <button class="btn-ant" id="btn_anterior">Anterior</button>
+        <button class="btn-pro" id="btn_proximo">Próximo</button>
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <td>Dom</td>
+            <td>Seg</td>
+            <td>Ter</td>
+            <td>Qua</td>
+            <td>Qui</td>
+            <td>Sex</td>
+            <td>Sab</td>
+          </tr>
+        </thead>
+        <tbody id="dias">
+            <tr>
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+             <td>7</td>
+            </tr>
+            <tr>
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+             <td>7</td>
+            </tr>
+             <tr>
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+             <td>7</td>
+            </tr>
+            <tr>
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+             <td>7</td>
+            </tr>
+            <tr>
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+             <td>7</td>
+            </tr>
+            <tr>
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+             <td>7</td>
+            </tr>
+          
+          </tbody>
+        </table>
+        <footer>
+          <h2 id="ano"></h2>
+        </footer>
+      </div>
+    </div>
   
-  <header>
-  <h2 id="mes">Abril</h2>
-   <a class="bnt-ant" id="btn_prev">></a>
-   <a class="bnt-pro" id="btn_ant">></a>
-  <header>
-   <table>
-   <thead>
-    <tr>
-      <td>Dom</td>
-      <td>Seg</td>
-      <td>Ter</td>
-      <td>Qua</td>
-      <td>Qui</td>
-      <td>Sex</td>
-      <td>Sab</td>
-    </tr>
-   </thead>
-   <tbody id="dias">
-     <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-     </tr>
-     <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-     </tr>
-      <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-     </tr>
-     <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-     </tr>
-     <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-     </tr>
-     <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-     </tr>
-   
-   </tbody>
-
-   </table>
-<footer>
-  <h2 id="ano"></h2>
-</footer>
-
-</div>
-<script src="{%static 'calendario/javascript/agenda.js'%}"></script>
-</body>
-</html>
+    <script src="{% static 'calendario/js/agenda_js.js' %}"></script>
+  
+  </body>
+  </html>
